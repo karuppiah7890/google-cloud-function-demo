@@ -107,3 +107,19 @@ $ gcloud functions list
 NAME      STATUS  TRIGGER       REGION
 helloGET  ACTIVE  HTTP Trigger  us-central1
 ```
+
+### Deleting a deployed function
+
+Deleting the function is as simple as:
+
+```
+$ gcloud functions delete helloGET
+
+Resource [projects/cloud-functions-demo-217305/locations/us-central1/f
+unctions/helloGET] will be deleted.
+
+Do you want to continue (Y/n)?  y
+
+Waiting for operation to finish...done.
+Deleted [projects/cloud-functions-demo-217305/locations/us-central1/functions/helloGET].
+```
