@@ -37,6 +37,7 @@ updateTime: '2018-09-28T09:29:11Z'
 
 While deploying, it also created a `.gcloudignore` file
 
+You can hit the HTTP endpoint given under `httpsTrigger.url` to trigger the function and finally get a HTTP response. It's `https://us-central1-cloud-functions-demo-217305.cloudfunctions.net/helloGET` in this case
 
 ### Getting a list of the functions deployed
 
