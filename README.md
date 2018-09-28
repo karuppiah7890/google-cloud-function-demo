@@ -39,6 +39,14 @@ While deploying, it also created a `.gcloudignore` file
 
 You can hit the HTTP endpoint given under `httpsTrigger.url` to trigger the function and finally get a HTTP response. It's `https://us-central1-cloud-functions-demo-217305.cloudfunctions.net/helloGET` in this case
 
+In the above case, the max memory (RAM) provided to the function is 256 MB. This is the default. To mention the memory, you need to use the memory option, like this:
+
+```
+$ gcloud functions deploy helloGET --runtime nodejs8 --trigger-http --memory 128
+```
+
+Allowed values are 128MB, 256MB, 512MB, 1024MB, and 2048MB. And when updating an existing function, it will keep it's old memory limit, unless this flag is specified with a value
+
 ### Getting a list of the functions deployed
 
 ```
