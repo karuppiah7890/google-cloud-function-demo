@@ -41,6 +41,28 @@ While deploying, it also created a `.gcloudignore` file
 
 ```
 $ gcloud functions logs read helloGET
+
+LEVEL   NAME      EXECUTION_ID  TIME_UTC                 LOG
+D       helloGET  gpaxvy76awgx  2018-09-28 07:36:03.508  Function execution started
+D       helloGET  gpaxvy76awgx  2018-09-28 07:36:03.524  Function execution took 16 ms, finished with status code: 200
+D       helloGET  gpaxv07k7vfz  2018-09-28 07:36:14.073  Function execution started
+D       helloGET  gpaxv07k7vfz  2018-09-28 07:36:14.080  Function execution took 31 ms, finished with status code: 304
+D       helloGET  gpaxda7yzx9q  2018-09-28 07:36:15.524  Function execution started
+D       helloGET  gpaxda7yzx9q  2018-09-28 07:36:15.529  Function execution took 6 ms, finished with status code: 304
+D       helloGET  gpaxdo4fyz75  2018-09-28 07:36:17.133  Function execution started
+D       helloGET  gpaxdo4fyz75  2018-09-28 07:36:17.137  Function execution took 4 ms, finished with status code: 304
+D       helloGET  gpaxnfr5oqc5  2018-09-28 07:49:36.739  Function execution started
+D       helloGET  gpaxnfr5oqc5  2018-09-28 07:49:36.877  Function execution took 138 ms, finished with status code: 200
+NOTICE  helloGET                2018-09-28 07:50:31.413
+NOTICE  helloGET                2018-09-28 07:50:36.391
+NOTICE  helloGET                2018-09-28 07:56:25.588
+NOTICE  helloGET                2018-09-28 07:56:51.528
+D       helloGET  5kkt83q80a5r  2018-09-28 07:57:01.332  Function execution started
+D       helloGET  5kkt83q80a5r  2018-09-28 07:57:01.373  Function execution took 42 ms, finished with status code: 200
+D       helloGET  5vn7k7x65ie0  2018-09-28 09:27:19.409  Function execution started
+D       helloGET  5vn7k7x65ie0  2018-09-28 09:27:19.445  Function execution took 37 ms, finished with status code: 200
+NOTICE  helloGET                2018-09-28 09:28:44.852
+NOTICE  helloGET                2018-09-28 09:29:11.501
 ```
 
 ### Invoking the function from CLI!
