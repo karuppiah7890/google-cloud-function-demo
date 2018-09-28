@@ -27,3 +27,14 @@ While deploying, it also created a `.gcloudignore` file
 ```
 $ gcloud functions logs read helloGET
 ```
+
+### Invoking the function from CLI!
+
+Instead of invoking the function using a HTTP request, you can invoke it from the command line using 
+
+```
+$ gcloud functions call helloGET
+
+executionId: 5vn7k7x65ie0
+result: Hello World! :D
+```
