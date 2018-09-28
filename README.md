@@ -37,6 +37,16 @@ updateTime: '2018-09-28T09:29:11Z'
 
 While deploying, it also created a `.gcloudignore` file
 
+
+### Getting a list of the functions deployed
+
+```
+$ gcloud functions list
+
+NAME      STATUS  TRIGGER       REGION
+helloGET  ACTIVE  HTTP Trigger  us-central1
+```
+
 ### Checking your logs is no tough stuff
 
 ```
@@ -97,15 +107,6 @@ status: ACTIVE
 timeout: 60s
 updateTime: '2018-09-28T09:29:11Z'
 versionId: '2'
-```
-
-### Getting a list of the functions deployed
-
-```
-$ gcloud functions list
-
-NAME      STATUS  TRIGGER       REGION
-helloGET  ACTIVE  HTTP Trigger  us-central1
 ```
 
 ### Deleting a deployed function
